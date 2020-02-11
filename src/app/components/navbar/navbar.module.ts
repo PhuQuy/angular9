@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [TopNavbarComponent, SideNavbarComponent],
@@ -16,7 +17,8 @@ import { MatListModule } from '@angular/material/list';
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   exports: [TopNavbarComponent, SideNavbarComponent]
 })

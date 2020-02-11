@@ -1,16 +1,24 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-sm>
-    <mat-icon>menu</mat-icon>
-  </button>
-  <a [routerLink]="['/']" mat-button>
-    <h1>Navigation</h1>
-  </a>
-  <div fxFlex fxLayout fxLayoutAlign="end">
-    <div fxHide.lt-md>
-      <a [routerLink]="['/products']" mat-button>Products</a>
-      <a [routerLink]="['/services']" mat-button>Services</a>
-      <a [routerLink]="['/about']" mat-button>About</a>
-      <a [routerLink]="['/contact']" mat-button>Contact</a>
+<div class="container" fxFlex="100%" fxFlex.gt-sm="80%" fxFlexOffset="0" fxFlexOffset.gt-sm="10" fxLayoutAlign="center">
+  <mat-toolbar style="min-height:100px">
+    <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <a [routerLink]="['/']" mat-button>
+      <h1 class="text-white nav-brand">
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+          <img src="/assets/images/logo.png" height="100px" style="margin-right: 10px;">
+          LAMBDA
+        </div>
+      </h1>
+    </a>
+    <div fxFlex fxLayout fxLayoutAlign="end">
+      <div fxHide.lt-md class="text-white">
+        <a mat-button class="text-uppercase mx-2">About</a>
+        <a mat-button class="text-uppercase  mx-2">Features</a>
+        <a mat-button class="text-uppercase  mx-2">Design</a>
+        <a mat-button class="text-uppercase  mx-2">Screenshots</a>
+        <a mat-button class="text-uppercase  mx-2">Testimonials</a>
+      </div>
     </div>
-  </div>
-</mat-toolbar>
+  </mat-toolbar>
+</div>
