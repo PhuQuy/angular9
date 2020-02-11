@@ -8,6 +8,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 html,
 body {
@@ -39,8 +40,8 @@ app-top-navbar {
 }
 
 .mx-2 {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
 }
 
 .light {
@@ -54,4 +55,8 @@ app-top-navbar {
 
 .bigger {
   font-size: 48px;
+}
+
+.rounded {
+  border-radius: 25px !important;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-top-navbar',
@@ -6,8 +6,12 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
     styleUrls: ['./top-navbar.component.scss']
 })
 export class TopNavbarComponent implements OnInit {
-
+    isTop: boolean;
     @Output() public sidenavToggle = new EventEmitter();
+    @HostListener('scroll', ['$event']) 
+    scrollHandler(event) {
+      console.debug("Scroll Event");
+    }
 
     constructor() { }
 
