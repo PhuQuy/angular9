@@ -1,5 +1,5 @@
 <div class="container" fxFlex="100%" fxFlex.gt-sm="80%" fxFlexOffset="0" fxFlexOffset.gt-sm="10" fxLayoutAlign="center">
-  <mat-toolbar style="min-height:100px">
+  <mat-toolbar style="min-height:100px" [class.bg-white]="isTop">
     <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
