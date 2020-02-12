@@ -8,9 +8,9 @@ import { Component, OnInit, EventEmitter, Output, HostListener } from '@angular/
 export class TopNavbarComponent implements OnInit {
     isTop: boolean;
     @Output() public sidenavToggle = new EventEmitter();
-    @HostListener('scroll', ['$event']) 
+    @HostListener('scroll', ['$event'])
     scrollHandler(event) {
-      console.debug("Scroll Event");
+        console.debug("Scroll Event");
     }
 
     constructor() { }
@@ -22,4 +22,10 @@ export class TopNavbarComponent implements OnInit {
         this.sidenavToggle.emit();
     }
 
+    onScroll(id) {
+        setTimeout(() => {
+            const el = document.getElementById(id);
+            el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+    }
 }

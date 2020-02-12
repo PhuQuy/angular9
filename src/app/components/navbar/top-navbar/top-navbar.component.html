@@ -13,11 +13,11 @@
     </a>
     <div fxFlex fxLayout fxLayoutAlign="end">
       <div fxHide.lt-md class="text-white">
-        <a mat-button class="text-uppercase mx-2">About</a>
-        <a mat-button class="text-uppercase  mx-2">Features</a>
-        <a mat-button class="text-uppercase  mx-2">Design</a>
-        <a mat-button class="text-uppercase  mx-2">Screenshots</a>
-        <a mat-button class="text-uppercase  mx-2">Testimonials</a>
+        <a mat-button class="text-uppercase mx-2" (click)="onScroll('about')">About</a>
+        <a mat-button class="text-uppercase mx-2" (click)="onScroll('features')">Features</a>
+        <a mat-button class="text-uppercase mx-2" (click)="onScroll('design')">Design</a>
+        <a mat-button class="text-uppercase mx-2" (click)="onScroll('screenshots')">Screenshots</a>
+        <a mat-button class="text-uppercase mx-2" (click)="onScroll('testimonials')">Testimonials</a>
       </div>
     </div>
   </mat-toolbar>

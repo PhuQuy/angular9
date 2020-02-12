@@ -8,15 +8,17 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   imageOverlay = false;
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   @HostListener('window:scroll', ['$event'])
-    public scrolling(event: any) {
-        console.log('window.scrollY');
-        
-    }
+  public scrolling(event: any) {
+    console.log('window.scrollY');
+
+  }
+
+
 }

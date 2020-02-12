@@ -19,3 +19,13 @@
  .d-table {
    display: table;
  }
+
+ .skills-list {
+   list-style: none;
+   padding-left: 0 !important;
+
+   i {
+     color: #72b4b6;
+     padding-right: 5px;
+   }
+ }
