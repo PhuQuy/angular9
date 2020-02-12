@@ -9,7 +9,7 @@
             Apple
             <mat-icon fontSet="fab" fontIcon="fa-apple"></mat-icon>
           </button>
-          <button mat-raised-button class="rounded mx-2 text-white"
+          <button mat-raised-button class="rounded mx-4 text-white"
             style="background: rgba(87, 166, 168, 0.78);font-size: 20px;">
             Android
             <mat-icon fontSet="fab" fontIcon="fa-android"></mat-icon>
@@ -183,15 +183,16 @@
     </div>
 
     <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" style="padding: 60px 60px 0px 60px">
-      <div fxFlex="50">
-        <img class="w-100"
+      <div fxFlex="50" fxLayoutAlign="flex-end flex-end">
+        <img style="height: 70vh;"
           src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png">
       </div>
-      <div fxFlex="50">
-        <div fxLayout="column" fxLayoutAlign="center" class="h-100">
+      <div fxFlex="50" fxLayoutAlign="center">
+        <div fxLayout="column" fxLayoutAlign="center" style="height: 70vh;">
           <h1>BEST APP, EVER</h1>
           <div class="divider"></div>
-          <p class="lh-175">Lambda is the world’s most advanced theme. Built with incredible new capabilities and features designed to
+          <p class="lh-175">Lambda is the world’s most advanced theme. Built with incredible new capabilities and
+            features designed to
             make the most out of your creativity. As with all of our products you’ll get <strong>100% solid
               support.</strong></p>
           <ul class="skills-list">
@@ -217,18 +218,23 @@
   </section>
 
   <section id="testimonials" style="background-color: rgba(240,240,240,1); padding: 60px">
-    <div fxLayoutAlign="center center">
-      <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
-        <blockquote>
-          I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to you how
-          powerful
-          beautiful and dynamic this theme is let alone the great customer service and you get a them that is a must.
-          Whether you have a theme you like or not, you must get this theme!
-        </blockquote>
-        <img width="150" height="150"
-          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-t-02-150x150.jpg"
-          class="attachment-thumbnail size-thumbnail wp-post-image" alt="" sizes="(max-width: 150px) 100vw, 150px"
-          draggable="false">
+    <div fxLayout="column">
+      <div fxLayoutAlign="center center">
+        <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
+          <blockquote>
+            I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to you how
+            powerful
+            beautiful and dynamic this theme is let alone the great customer service and you get a them that is a must.
+            Whether you have a theme you like or not, you must get this theme!
+          </blockquote>
+        </div>
+      </div>
+      <div fxFlex fxLayoutAlign="center center" fxLayout="column">
+        <img width="100" height="100" class="rounded-circle"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-t-02-150x150.jpg">
+        <div>
+          Billy Thompson overplex.com
+        </div>
       </div>
     </div>
   </section>
@@ -237,9 +243,9 @@
     <div fxLayout="column" fxLayoutAlign="space-between center">
       <h1 class="text-white">GET IT NOW</h1>
 
-      <div style="height: 4px; width: 40px; background: #72b4b6"></div>
-      <h2 class="text-white">
-        Lambda is available now exclusively on themeforest.
+      <div style="height: 4px; width: 40px; background: #72b4b6; margin-top: 10px;"></div>
+      <h2 class="text-white light text-center" style="padding: 10px 0px; font-size: 35px;">
+        Lambda is available now exclusively on themeforest. <br>
         Start creating your website now!
       </h2>
 
@@ -248,7 +254,7 @@
           Apple
           <mat-icon fontSet="fab" fontIcon="fa-apple"></mat-icon>
         </button>
-        <button mat-raised-button class="rounded mx-2 text-white"
+        <button mat-raised-button class="rounded mx-4 text-white"
           style="background: rgba(87, 166, 168, 0.78);font-size: 20px;">
           Android
           <mat-icon fontSet="fab" fontIcon="fa-android"></mat-icon>

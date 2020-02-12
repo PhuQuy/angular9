@@ -49,6 +49,11 @@ app-top-navbar {
   margin-right: 5px !important;
 }
 
+.mx-4 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
 .mr-2 {
   margin-right: 5px !important;
 
@@ -79,8 +84,12 @@ app-top-navbar {
   border-radius: 25px !important;
 }
 
+.text-center {
+  text-align: text-center;
+}
+
 blockquote:before {
-  content: "\201C";
+  content: "“";
   display: block;
   font-family: Georgia;
   font-size: 84px;
@@ -137,4 +146,9 @@ blockquote:before {
 
 .lh-175 {
   line-height: 1.75em;
+}
+
+.mat-raised-button {
+  line-height: 50px !important;
+  padding: 0 30px !important;
 }
