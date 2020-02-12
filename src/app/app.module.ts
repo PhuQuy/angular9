@@ -7,6 +7,7 @@ import { NavbarModule } from '@components/navbar/navbar.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { Routes, RouterModule } from '@angular/router';
 import { MainLayoutComponent } from '@layouts/main-layout/main-layout.component';
+import { ShareService } from './share/share.service';
 
 const routes: Routes = [
     {
@@ -29,7 +30,7 @@ const routes: Routes = [
         MatSidenavModule,
         RouterModule.forRoot(routes)
     ],
-    providers: [],
+    providers: [ShareService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,24 +1,23 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ShareService } from 'app/share/share.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
-  imageOverlay = false;
+    imageOverlay = false;
 
-  constructor() { }
+    constructor(private shareService: ShareService) { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+        window.addEventListener('scroll', this.scrollEvent, true);
+    }
 
-  @HostListener('window:scroll', ['$event'])
-  public scrolling(event: any) {
-    console.log('window.scrollY');
-
-  }
-
+    scrollEvent = (event: any): void => {
+        this.shareService.setOffsetTop(event.target.scrollTop);
+    }
 
 }

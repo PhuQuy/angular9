@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, HostListener } from '@angular/core';
+import { ShareService } from 'app/share/share.service';
 
 @Component({
     selector: 'app-top-navbar',
@@ -8,14 +9,12 @@ import { Component, OnInit, EventEmitter, Output, HostListener } from '@angular/
 export class TopNavbarComponent implements OnInit {
     isTop: boolean;
     @Output() public sidenavToggle = new EventEmitter();
-    @HostListener('scroll', ['$event'])
-    scrollHandler(event) {
-        console.debug("Scroll Event");
-    }
-
-    constructor() { }
+    constructor(private shareService: ShareService) { }
 
     ngOnInit() {
+        this.shareService.offsetTop.subscribe(offsetTop => {
+            this.isTop = offsetTop > 300;
+        });
     }
 
     public onToggleSidenav = () => {
@@ -25,7 +24,7 @@ export class TopNavbarComponent implements OnInit {
     onScroll(id) {
         setTimeout(() => {
             const el = document.getElementById(id);
-            el.scrollIntoView({ behavior: "smooth" });
+            el.scrollIntoView({ behavior: 'smooth' });
         }, 100);
     }
 }

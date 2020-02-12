@@ -2,3 +2,18 @@
   font-weight: 400;
   font-size: 24px;
 }
+
+.navbar {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    
+    a {
+        color: white;
+    }
+
+  &.bg-white a {
+    color: #4c4c4c !important;
+  }
+}
