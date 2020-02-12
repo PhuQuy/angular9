@@ -13,6 +13,11 @@
 html,
 body {
   height: 100%;
+  background-image: url(http://lambda.oxygenna.com/landing/wp-content/uploads/sites/10/2014/11/app-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: no-scroll;
+  background-position: 50% 0%;
 }
 
 body {
@@ -84,6 +89,7 @@ blockquote:before {
   left: 0;
   top: 0;
 }
+
 .w-100 {
   width: 100% !important;
 }
@@ -115,4 +121,12 @@ blockquote:before {
 
 .position-relative {
   position: relative !important;
+}
+
+.mat-drawer-container {
+  background-color: transparent !important;
+}
+
+.bg-white {
+    background-color: white !important;
 }
