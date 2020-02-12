@@ -60,3 +60,14 @@ app-top-navbar {
 .rounded {
   border-radius: 25px !important;
 }
+
+blockquote:before {
+  content: "\201C";
+  display: block;
+  font-family: Georgia;
+  font-size: 84px;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
