@@ -26,7 +26,7 @@
     </div>
   </section>
   <section>
-    <!-- <p>main-layout works!</p> -->
+    <!-- Features -->
     <div class="content">
       <div fxLayout="column" fxLayoutAlign="space-between center">
         <h2> AWESOME FEATURES</h2>
@@ -40,19 +40,23 @@
         </label>
       </div>
       <div fxLayout="row" fxLayoutAlign="space-around center">
-        <div fxFlex="35" fxLayout="column" fxLayoutAlign="center">
-          <div class="feature-item">
-            <div class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
+          <div fxFlex="5"></div>
+
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
+          <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item">
+            <div fxFlex="17" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
             </div>
+            <div fxFlex="4"></div>
             <div>
               <h3 class="mt-0">SPEECH RECOGNITION</h3>
               <p>Want to interact with the app. No need for gestures! Speak and it will understand.</p>
             </div>
           </div>
 
-          <div class="feature-item">
-            <div class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
+          <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item">
+            <div fxFlex="17" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
             </div>
+            <div fxFlex="4"></div>
             <div>
               <h3 class="mt-0">FREE UPDATES</h3>
               <p>No need to pay to get the updates. With Lambda all updates are free!</p>
@@ -62,24 +66,28 @@
         <div>
           <img src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-03.png">
         </div>
-        <div fxFlex="35" fxLayout="column" fxLayoutAlign="center">
-          <div class="feature-item">
-            <div class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
+        <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
+          <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item">
+            <div fxFlex="17" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
             </div>
+            <div fxFlex="4"></div>
             <div>
               <h3 class="mt-0">RESPONSIVE DESIGN</h3>
               <p>Made to look great on all devices. Tablets, mobiles and even desktops.</p>
             </div>
           </div>
-          <div class="feature-item">
-            <div class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
+          <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item">
+            <div fxFlex="17" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
             </div>
+            <div fxFlex="4"></div>
             <div>
               <h3 class="mt-0">ENERGY SAVER</h3>
               <p>Designed to save energy and use less of your device’s CPU so you can use it more.</p>
             </div>
           </div>
         </div>
+        <div fxFlex="5"></div>
+
       </div>
     </div>
   </section>
@@ -88,7 +96,7 @@
   <section>
     <div fxLayout="column" fxLayoutAlign="space-between center">
       <h2> SCREENSHOTS</h2>
-      <div style="height: 4px; width: 40px; background: #72b4b6"></div>
+      <div class="divider"></div>
       <label>
         We worked hard to make a product that will stand out from the crowd.
       </label>
@@ -96,26 +104,95 @@
         Take a look at some of these cool features that makes Lambda so unique.
       </label>
     </div>
-    <div fxLayout="row" fxLayoutAlign="space-between start">
-      <div [fxFlex]="100 / 6.2">
-        <img class="w-100" src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-01.jpg">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div [fxFlex]="100 / 6" class="position-relative mr-2">
+        <img class="w-100 h-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-01.jpg">
+        <div class="img-overlay w-100 h-100">
+          <div class="h-100 w-100 d-table">
+            <div class="w-100 figure-caption">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div [fxFlex]="100 / 6.2">
-        <img class="w-100" src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-02.jpg">
+      <div [fxFlex]="100 / 6" class="position-relative mx-2">
+        <img class="w-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-02.jpg">
+        <div class="img-overlay w-100 h-100">
+          <div class="h-100 w-100 d-table">
+            <div class="w-100 figure-caption">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div [fxFlex]="100 / 6.2">
-        <img class="w-100" src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-03.jpg">
+      <div [fxFlex]="100 / 6" class="position-relative mx-2">
+        <img class="w-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-03.jpg">
+        <div class="img-overlay w-100 h-100">
+          <div class="h-100 w-100 d-table">
+            <div class="w-100 figure-caption">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div [fxFlex]="100 / 6.2">
-        <img class="w-100" src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-04.jpg">
+      <div [fxFlex]="100 / 6" class="position-relative mx-2">
+        <img class="w-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-04.jpg">
+        <div class="img-overlay w-100 h-100">
+          <div class="h-100 w-100 d-table">
+            <div class="w-100 figure-caption">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div [fxFlex]="100 / 6.2">
-        <img class="w-100" src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-05.jpg">
+      <div [fxFlex]="100 / 6" class="position-relative mx-2">
+        <img class="w-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-05.jpg">
+        <div class="img-overlay w-100 h-100">
+          <div class="h-100 w-100 d-table">
+            <div class="w-100 figure-caption">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div [fxFlex]="100 / 6.2">
-        <img class="w-100" src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-06.jpg">
+      <div [fxFlex]="100 / 6" class="position-relative ml-2">
+        <img class="w-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-06.jpg">
+        <div class="img-overlay w-100 h-100">
+          <div class="h-100 w-100 d-table">
+            <div class="w-100 figure-caption">
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between">
+      <div fxFlex="50">
+        <img class="w-100"
+          src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png">
+      </div>
+      <div fxFlex="50">
+        <div fxLayout="column" fxLayoutAlign="space-between">
+          <h2>BEST APP, EVER</h2>
+          <div class="divider"></div>
+          <p>Lambda is the world’s most advanced theme. Built with incredible new capabilities and features designed to
+            make the most out of your creativity. As with all of our products you’ll get <strong>100% solid
+              support.</strong></p>
+          <ul>
+            <li>Awesome design</li>
+            <li>Retina ready</li>
+            <li>WooCommerce ready</li>
+            <li>Cool animations</li>
+            <li>Speed optimised</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
