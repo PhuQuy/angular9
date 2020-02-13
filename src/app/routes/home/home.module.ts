@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { DirectiveModule } from 'app/directives/directive.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const routes: Routes = [
     {
@@ -22,7 +23,8 @@ const routes: Routes = [
         FlexLayoutModule,
         MatIconModule,
         MatButtonModule,
-        DirectiveModule
+        DirectiveModule,
+        MatDialogModule
     ]
 })
 export class HomeModule {
