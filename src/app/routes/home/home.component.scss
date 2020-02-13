@@ -6,6 +6,12 @@
   background-size: cover;
   background-attachment: no-scroll;
   background-position: 50% 0%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 110vh;
+  left: 0px;
+  top: 0px;
 }
 
 .about-container {

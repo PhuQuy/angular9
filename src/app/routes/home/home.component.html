@@ -1,5 +1,6 @@
 <section id="about">
-  <div class="background-media about-container" fxLayout="row" fxLayout.xs="column">
+  <div class=" about-container" fxLayout="row" fxLayout.xs="column">
+    <div class="background-media" [style.transform]="'translateY(' + (scrollTop) + 'px)'"></div>
     <div fxFlex="60" fxFlex.xs="100" fxLayoutAlign="space-around center" fxLayoutAlign.xs="space-between center"
       style="height: 100vh;">
       <div class="text-white about-content">
@@ -120,7 +121,7 @@
     <div [fxFlex]="100 / 6" class="position-relative" (click)="openImgViewer(image)"
       *ngFor="let image of images; let first = first; let last = last; let index = index"
       [ngClass]="{'mr-2': first, 'ml-2': last, 'mx-2': !first && !last }">
-      <img class="w-100 h-100" [src]="image?.src" fadeScrollAnimate [delay]="index * 100">
+      <img class="w-100 h-100" [src]="image?.src" fadeScrollAnimate [delay]="index * 140">
       <div class="img-overlay w-100 h-100">
         <div class="h-100 w-100 d-table">
           <div class="w-100 figure-caption">
@@ -129,64 +130,10 @@
         </div>
       </div>
     </div>
-    <!-- <div [fxFlex]="100 / 6" class="position-relative mx-2">
-      <img class="w-100"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-02.jpg">
-      <div class="img-overlay w-100 h-100">
-        <div class="h-100 w-100 d-table">
-          <div class="w-100 figure-caption">
-            <i class="fa fa-plus"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div [fxFlex]="100 / 6" class="position-relative mx-2">
-      <img class="w-100"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-03.jpg">
-      <div class="img-overlay w-100 h-100">
-        <div class="h-100 w-100 d-table">
-          <div class="w-100 figure-caption">
-            <i class="fa fa-plus"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div [fxFlex]="100 / 6" class="position-relative mx-2">
-      <img class="w-100"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-04.jpg">
-      <div class="img-overlay w-100 h-100">
-        <div class="h-100 w-100 d-table">
-          <div class="w-100 figure-caption">
-            <i class="fa fa-plus"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div [fxFlex]="100 / 6" class="position-relative mx-2">
-      <img class="w-100"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-05.jpg">
-      <div class="img-overlay w-100 h-100">
-        <div class="h-100 w-100 d-table">
-          <div class="w-100 figure-caption">
-            <i class="fa fa-plus"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div [fxFlex]="100 / 6" class="position-relative ml-2">
-      <img class="w-100"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-06.jpg">
-      <div class="img-overlay w-100 h-100">
-        <div class="h-100 w-100 d-table">
-          <div class="w-100 figure-caption">
-            <i class="fa fa-plus"></i>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 
-  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" class="content-container" style="padding-bottom: 0px">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" class="content-container"
+    style="padding-bottom: 0px">
     <div fxFlex="50" fxFlex.xs="100" fxLayoutAlign="flex-end flex-end" fxLayoutAlign.xs="center">
       <img style="height: 70vh;"
         src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png"

@@ -19,8 +19,6 @@ export class TopNavbarComponent implements OnInit {
 
         this.shareService.activeRouter.subscribe(activeRouter => {
             this.activeRouter = activeRouter;
-            console.log(activeRouter);
-            
         });
     }
 

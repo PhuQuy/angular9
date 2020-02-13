@@ -50,7 +50,9 @@ export class HomeComponent implements OnInit {
             }
         },
         nav: false
-    }
+    };
+
+    scrollTop = 0;
     constructor(private shareService: ShareService, public dialog: MatDialog) { }
 
     ngOnInit(): void {
@@ -58,6 +60,7 @@ export class HomeComponent implements OnInit {
     }
 
     scrollEvent = (event: any): void => {
+        this.scrollTop = event.target.scrollTop / 2;
         this.shareService.setOffsetTop(event.target.scrollTop);
     }
 
