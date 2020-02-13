@@ -8,12 +8,19 @@ import { ShareService } from 'app/share/share.service';
 })
 export class TopNavbarComponent implements OnInit {
     isTop;
+    activeRouter;
     @Output() public sidenavToggle = new EventEmitter();
     constructor(private shareService: ShareService) { }
 
     ngOnInit() {
         this.shareService.offsetTop.subscribe(offsetTop => {
             this.isTop = offsetTop == null ? null : offsetTop > 0;
+        });
+
+        this.shareService.activeRouter.subscribe(activeRouter => {
+            this.activeRouter = activeRouter;
+            console.log(activeRouter);
+            
         });
     }
 

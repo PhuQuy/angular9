@@ -12,10 +12,17 @@
   a {
     color: white;
     font-size: 18px;
+    &.active {
+        color: #72b4b6 !important;
+      }
   }
 
   &.bg-white-animate a {
     color: #4c4c4c !important;
+
+    &.active {
+      color: #72b4b6 !important;
+    }
   }
 
   &.bg-white-animate .custom-mat-stroked-button {

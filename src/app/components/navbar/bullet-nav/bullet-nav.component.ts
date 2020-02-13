@@ -47,7 +47,7 @@ export class BulletNavComponent implements OnInit, AfterViewInit {
         setTimeout(() => {
             this.ids.forEach((router, index) => {
                 const el = document.getElementById(router.id);
-                router.value = el.offsetTop  - (index * 100);
+                router.value = el.offsetTop - (index * 100);
             });
             this.shareService.offsetTop.subscribe(offsetTop => {
                 from(this.ids).pipe(
@@ -55,6 +55,7 @@ export class BulletNavComponent implements OnInit, AfterViewInit {
                     max()
                 ).subscribe(router => {
                     this.activeRouter = router;
+                    this.shareService.setActiveRouter(router);
                 });
             });
         }, 1000);
