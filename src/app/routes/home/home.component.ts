@@ -41,10 +41,10 @@ export class HomeComponent implements OnInit {
         this.shareService.setOffsetTop(event.target.scrollTop);
     }
 
-
     openImgViewer(image) {
         const dialogRef = this.dialog.open(ImageViewerComponent, {
-            width: '250px',
+            height: '85vh',
+            width: '50vh',
             data: image.src
         });
     }
