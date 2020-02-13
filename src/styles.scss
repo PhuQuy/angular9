@@ -5,7 +5,7 @@ $angular9-accent: mat-palette($mat-pink, A200, A100, A400);
 $angular9-warn: mat-palette($mat-red);
 $angular9-theme: mat-light-theme($angular9-primary, $angular9-accent, $angular9-warn);
 @include angular-material-theme($angular9-theme);
-// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import "~@fortawesome/fontawesome-free/css/all.css";
@@ -27,6 +27,12 @@ body {
   margin: 0;
   //   font-family: Open Sans, sans-serif;
   font-family: 'Quicksand', sans-serif;
+}
+
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+//   font-family: inherit !important;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 .text-uppercase {
