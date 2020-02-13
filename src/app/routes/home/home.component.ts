@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
         mouseDrag: false,
         touchDrag: false,
         pullDrag: false,
-        dots: false,
+        dots: true,
         navSpeed: 700,
         navText: ['', ''],
         responsive: {
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
                 items: 1
             }
         },
-        nav: true
+        nav: false
     }
     constructor(private shareService: ShareService, public dialog: MatDialog) { }
 

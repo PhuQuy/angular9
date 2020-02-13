@@ -25,7 +25,7 @@ body {
 
 body {
   margin: 0;
-//   font-family: Open Sans, sans-serif;
+  //   font-family: Open Sans, sans-serif;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -99,8 +99,13 @@ blockquote:before {
   font-size: 84px;
   line-height: 1;
   position: absolute;
-  left: 0;
+  left: -35px;
   top: 0;
+  color: #9a9a9a;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .w-100 {

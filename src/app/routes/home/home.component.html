@@ -1,6 +1,7 @@
 <section id="about">
   <div class="background-media about-container" fxLayout="row" fxLayout.xs="column">
-    <div fxFlex="60" fxFlex.xs="100" fxLayoutAlign="space-around center" fxLayoutAlign.xs="space-between center" style="height: 122vh;">
+    <div fxFlex="60" fxFlex.xs="100" fxLayoutAlign="space-around center" fxLayoutAlign.xs="space-between center"
+      style="height: 122vh;">
       <div class="text-white about-content">
         <h1 fadeScrollAnimate class="light super">LAMBDA</h1>
         <h3 fadeScrollAnimate class="bigger light">The most powerful app ever <br> made. Buy it now!</h3>
@@ -223,37 +224,35 @@
 </section>
 
 <section id="testimonials" style="background-color: rgba(240,240,240,1); padding: 60px">
-  <div fxLayout="column">
-    <div fxLayoutAlign="center center">
-      <owl-carousel-o [options]="customOptions">
-        <ng-container *ngFor="let slide of [1,2,3]">
-          <ng-template carouselSlide>
-            <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
-              <div fxLayoutAlign="start">
-                <mat-icon fontSet="fas" fontIcon="fa-quote-left" style="font-size: 25px;color:#d0d0d0"></mat-icon>
-                <blockquote fadeScrollAnimate class="text-center">
-                  I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to you
-                  how
-                  powerful beautiful and dynamic this theme is let alone the great customer service and you get a them
-                  that is a
-                  must.
-                  Whether you have a theme you like or not, you must get this theme!
-                </blockquote>
-              </div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let slide of images">
+      <div fxLayout="column">
+        <div fxLayoutAlign="center center">
+          <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
+            <div fxLayoutAlign="start" class="position-relative">
+              <!-- <mat-icon fontSet="fas" fontIcon="fa-quote-left" style="font-size: 25px;color:#d0d0d0"></mat-icon> -->
+              <blockquote fadeScrollAnimate class="text-center" style="min-width: 40vw;">
+                I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to
+                you
+                how
+                powerful beautiful and dynamic this theme is let alone the great customer service and you get a them
+                that is a
+                must.
+                Whether you have a theme you like or not, you must get this theme!
+              </blockquote>
             </div>
-          </ng-template>
-        </ng-container>
-
-      </owl-carousel-o>
-    </div>
-    <div fxFlex fxLayoutAlign="center center" fxLayout="column" fadeScrollAnimate>
-      <img width="100" height="100" class="rounded-circle"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-t-02-150x150.jpg">
-      <div>
-        -- Billy Thompson overplex.com
+          </div>
+        </div>
+        <div fxFlex fxLayoutAlign="center center" fxLayout="column" fadeScrollAnimate style="margin-top: 10px">
+          <img width="100" height="100" class="rounded-circle" style="width: 100px !important;"
+            src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-t-02-150x150.jpg">
+          <div style="margin: 30px 0">
+            -- Billy Thompson overplex.com
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </ng-template>
+  </owl-carousel-o>
 </section>
 
 <section id="get-it" style="background-color: transparent; padding: 60px; min-height: 60vh;">
