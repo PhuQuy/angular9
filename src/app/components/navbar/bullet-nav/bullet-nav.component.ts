@@ -45,20 +45,16 @@ export class BulletNavComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         setTimeout(() => {
-
             this.ids.forEach((router, index) => {
                 const el = document.getElementById(router.id);
                 router.value = el.offsetTop  - (index * 100);
             });
-            console.log(this.ids);
-
             this.shareService.offsetTop.subscribe(offsetTop => {
                 from(this.ids).pipe(
                     filter(router => router.value < offsetTop),
                     max()
                 ).subscribe(router => {
                     this.activeRouter = router;
-                    console.log(this.activeRouter);
                 });
             });
         }, 1000);
