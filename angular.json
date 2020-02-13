@@ -29,6 +29,7 @@
             ],
             "styles": [
               "src/assets/css/responsive.css",
+              "src/assets/css/animation.css",
               "src/styles.scss"
             ],
             "scripts": []

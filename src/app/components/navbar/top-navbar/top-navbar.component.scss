@@ -4,16 +4,35 @@
 }
 
 .navbar {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    
-    a {
-        color: white;
-    }
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
 
-  &.bg-white a {
+  a {
+    color: white;
+  }
+
+  &.bg-white-animate a {
     color: #4c4c4c !important;
+  }
+}
+
+.bg-navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &.fade-in {
+    opacity: 1;
+
+  }
+
+  &.fade-out {
+    opacity: 0;
   }
 }

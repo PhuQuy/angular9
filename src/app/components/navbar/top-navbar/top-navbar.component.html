@@ -1,10 +1,11 @@
-<div class="navbar" [class.bg-white]="isTop">
-    <div class="container" fxFlex="100%" fxFlex.gt-sm="80%" fxFlexOffset="0" fxFlexOffset.gt-sm="10" fxLayoutAlign="center">
+<div class="navbar" [class.bg-white-animate]="isTop">
+    <div class="bg-navbar" [class.fade-in]="isTop" [class.fade-out]="isTop == false"></div>
+    <div class="container " fxFlex="100%" fxFlex.gt-sm="80%" fxFlexOffset="0" fxFlexOffset.gt-sm="10" fxLayoutAlign="center" >
       <mat-toolbar style="min-height:100px">
         <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-sm>
           <mat-icon>menu</mat-icon>
         </button>
-        <a [routerLink]="['/']" mat-button>
+        <a [routerLink]="['/']" mat-button [class.scale-down-center]="isTop" [class.scale-up-center]="isTop == false">
           <h1 class="nav-brand">
             <div fxLayout="row" fxLayoutAlign="space-around center">
               <img src="/assets/images/logo.png" height="100px" style="margin-right: 10px;">

@@ -7,13 +7,13 @@ import { ShareService } from 'app/share/share.service';
     styleUrls: ['./top-navbar.component.scss']
 })
 export class TopNavbarComponent implements OnInit {
-    isTop: boolean;
+    isTop;
     @Output() public sidenavToggle = new EventEmitter();
     constructor(private shareService: ShareService) { }
 
     ngOnInit() {
         this.shareService.offsetTop.subscribe(offsetTop => {
-            this.isTop = offsetTop > 300;
+            this.isTop = offsetTop == null ? null : offsetTop > 0;
         });
     }
 

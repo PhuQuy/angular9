@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ShareService {
 
-    offsetTop = new BehaviorSubject(0);
+    offsetTop = new BehaviorSubject(null);
     setOffsetTop(y) {
         this.offsetTop.next(y);
     }

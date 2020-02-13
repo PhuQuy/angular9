@@ -8,6 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { Routes, RouterModule } from '@angular/router';
 import { MainLayoutComponent } from '@layouts/main-layout/main-layout.component';
 import { ShareService } from './share/share.service';
+import { DirectiveModule } from './directives/directive.module';
 
 const routes: Routes = [
     {

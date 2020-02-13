@@ -2,13 +2,13 @@
   <div class="background-media" fxLayout="row" fxLayout.md="column">
     <div fxflex fxFlex="100%" fxFlex.gt-xs="50%" fxLayoutAlign="flex-end center" style="height: 92vh;">
       <div class="text-white">
-        <h1 class="light super">LAMBDA</h1>
-        <h3 class="bigger light">The most powerful app ever <br> made. Buy it now!</h3>
-        <button mat-raised-button color="white" class="rounded" style="font-size: 20px;">
+        <h1 fadeScrollAnimate class="light super">LAMBDA</h1>
+        <h3 fadeScrollAnimate class="bigger light">The most powerful app ever <br> made. Buy it now!</h3>
+        <button mat-raised-button color="white" class="rounded" style="font-size: 20px;" fadeScrollAnimate [offset]="1000">
           Apple
           <mat-icon fontSet="fab" fontIcon="fa-apple"></mat-icon>
         </button>
-        <button mat-raised-button class="rounded mx-4 text-white"
+        <button mat-raised-button class="rounded mx-4 text-white" fadeScrollAnimate [offset]="1000"
           style="background: rgba(87, 166, 168, 0.78);font-size: 20px;">
           Android
           <mat-icon fontSet="fab" fontIcon="fa-android"></mat-icon>
@@ -19,7 +19,7 @@
     <div fxflex fxLayout="row" fxLayout.xs="column" fxFlex="100%" fxFlex.gt-xs="50%" fxLayoutAlign="start center"
       style="height: 92vh;">
       <div style="height: 80vh;">
-        <img src="/assets/images/phone.png" height="100%" class="">
+        <img src="/assets/images/phone.png" height="100%" class="" moveScrollAnimate [offset]="500">
       </div>
     </div>
   </div>
@@ -28,9 +28,9 @@
 <section id="features">
   <div class="content bg-white" style="padding: 60px">
     <div fxLayout="column" fxLayoutAlign="space-between center">
-      <h2>AWESOME FEATURES</h2>
+      <h2 moveScrollAnimate>AWESOME FEATURES</h2>
       <div style="height: 4px; width: 40px; background: #72b4b6"></div>
-      <p class="text-center lh-175">
+      <p class="text-center lh-175" fadeScrollAnimate>
         Take a look at some of these features that makes Lambda so unique.<br>
         We worked hard to make a product that will stand out of the crowd.
       </p>
@@ -59,7 +59,7 @@
         </div>
       </div>
       <div>
-        <img src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-03.png">
+        <img src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-03.png" moveScrollAnimate [offset]="400">
       </div>
       <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
         <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px">
@@ -89,25 +89,25 @@
 
 <section id="design" style="background-color: rgba(240,240,240,1); padding: 60px">
   <div fxLayout="column" fxLayoutAlign="space-between center">
-    <h2>AMAZING DESIGN</h2>
+    <h2 fadeScrollAnimate>AMAZING DESIGN</h2>
 
     <div style="height: 4px; width: 40px; background: #72b4b6"></div>
-    <p class="text-center lh-175">
+    <p class="text-center lh-175" fadeScrollAnimate>
       Take a look at some of these features that makes Lambda so unique.<br>
       We worked hard to make a product that will stand out of the crowd.
     </p>
   </div>
   <div fxLayout="column" fxLayoutAlign="space-between center" style="margin-top: 30px">
-    <img src="/assets/images/app-04.png">
+    <img src="/assets/images/app-04.png" moveScrollAnimate [offset]="500">
   </div>
 </section>
 
 <!-- ScreenShot -->
 <section id="screenshots" class="bg-white">
   <div fxLayout="column" fxLayoutAlign="space-between center" style="padding: 60px 60px 40px 60px">
-    <h2 class="section-title">SCREENSHOTS</h2>
+    <h2 class="section-title" fadeScrollAnimate>SCREENSHOTS</h2>
     <div class="divider"></div>
-    <p class="text-center lh-175">
+    <p class="text-center lh-175" fadeScrollAnimate> 
       We worked hard to make a product that will stand out from the crowd.<br>
       Take a look at some of these cool features that makes Lambda so unique.
     </p>
@@ -184,31 +184,31 @@
   <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" style="padding: 60px 60px 0px 60px">
     <div fxFlex="50" fxLayoutAlign="flex-end flex-end">
       <img style="height: 70vh;"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png">
+        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png" moveScrollAnimate [offset]="500">
     </div>
     <div fxFlex="50" fxLayoutAlign="center">
       <div fxLayout="column" fxLayoutAlign="center" style="height: 70vh;">
-        <h1>BEST APP, EVER</h1>
+        <h1 fadeScrollAnimate>BEST APP, EVER</h1>
         <div class="divider"></div>
-        <p class="lh-175">Lambda is the world’s most advanced theme. Built with incredible new capabilities and
+        <p class="lh-175" fadeScrollAnimate>Lambda is the world’s most advanced theme. Built with incredible new capabilities and
           features designed to
           make the most out of your creativity. As with all of our products you’ll get <strong>100% solid
             support.</strong></p>
         <ul class="skills-list">
           <li>
-            <p><i class="fa fa-check"></i>Awesome design</p>
+            <p fadeScrollAnimate><i class="fa fa-check"></i>Awesome design</p>
           </li>
           <li>
-            <p><i class="fa fa-check"></i>Retina ready</p>
+            <p fadeScrollAnimate><i class="fa fa-check"></i>Retina ready</p>
           </li>
           <li>
-            <p><i class="fa fa-check"></i>WooCommerce ready</p>
+            <p fadeScrollAnimate><i class="fa fa-check"></i>WooCommerce ready</p>
           </li>
           <li>
-            <p><i class="fa fa-check"></i>Cool animations</p>
+            <p fadeScrollAnimate><i class="fa fa-check"></i>Cool animations</p>
           </li>
           <li>
-            <p><i class="fa fa-check"></i>Speed optimised</p>
+            <p fadeScrollAnimate><i class="fa fa-check"></i>Speed optimised</p>
           </li>
         </ul>
       </div>
@@ -220,7 +220,7 @@
   <div fxLayout="column">
     <div fxLayoutAlign="center center">
       <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
-        <blockquote>
+        <blockquote fadeScrollAnimate>
           I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to you how
           powerful
           beautiful and dynamic this theme is let alone the great customer service and you get a them that is a must.
@@ -228,7 +228,7 @@
         </blockquote>
       </div>
     </div>
-    <div fxFlex fxLayoutAlign="center center" fxLayout="column">
+    <div fxFlex fxLayoutAlign="center center" fxLayout="column" fadeScrollAnimate>
       <img width="100" height="100" class="rounded-circle"
         src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-t-02-150x150.jpg">
       <div>
@@ -240,20 +240,20 @@
 
 <section id="get-it" style="background-color: transparent; padding: 60px; min-height: 60vh;">
   <div fxLayout="column" fxLayoutAlign="space-between center">
-    <h1 class="text-white">GET IT NOW</h1>
+    <h1 class="text-white" fadeScrollAnimate>GET IT NOW</h1>
 
     <div style="height: 4px; width: 40px; background: #72b4b6; margin-top: 10px;"></div>
-    <h2 class="text-white light text-center" style="padding: 10px 0px; font-size: 35px;">
+    <h2 class="text-white light text-center" style="padding: 10px 0px; font-size: 35px;" fadeScrollAnimate>
       Lambda is available now exclusively on themeforest. <br>
       Start creating your website now!
     </h2>
 
     <div fxflex fxFlex="100%" fxFlex.gt-xs="50%" fxLayoutAlign="flex-end center">
-      <button mat-raised-button color="white" class="rounded" style="font-size: 20px;">
+      <button mat-raised-button color="white" class="rounded" style="font-size: 20px;" fadeScrollAnimate>
         Apple
         <mat-icon fontSet="fab" fontIcon="fa-apple"></mat-icon>
       </button>
-      <button mat-raised-button class="rounded mx-4 text-white"
+      <button mat-raised-button class="rounded mx-4 text-white" fadeScrollAnimate
         style="background: rgba(87, 166, 168, 0.78);font-size: 20px;">
         Android
         <mat-icon fontSet="fab" fontIcon="fa-android"></mat-icon>
