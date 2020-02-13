@@ -3,10 +3,10 @@ import { ShareService } from 'app/share/share.service';
 import { AnimateDirective } from './animate.directive';
 
 @Directive({
-    selector: '[moveScrollAnimate]'
+    selector: '[moveScrollRightAnimate]'
 })
-export class MoveScrollAnimateDirective extends AnimateDirective {
+export class MoveScrollRightAnimateDirective extends AnimateDirective {
     constructor(protected element: ElementRef, protected shareService: ShareService) {
-        super(element, shareService, 'slide-in-top', 'slide-out-top');
+        super(element, shareService, 'slide-in-right', 'slide-out-right');
     }
 }

@@ -25,7 +25,7 @@
   </div>
 </section>
 
-<section id="features">
+<section id="features" style="overflow: hidden;">
   <div class="content bg-white content-container">
     <div fxLayout="column" fxLayoutAlign="space-between center">
       <h2 moveScrollAnimate>AWESOME FEATURES</h2>
@@ -38,23 +38,23 @@
     <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
       <div fxFlex="5"></div>
       <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
-        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px">
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px" moveScrollLeftAnimate>
           <div fxFlex="19" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
           </div>
           <div fxFlex="4"></div>
           <div>
-            <h3 class="mt-0">SPEECH RECOGNITION</h3>
+            <h3 class="mt-0" >SPEECH RECOGNITION</h3>
             <p>Want to interact with the app. No need for gestures! Speak and it will understand.</p>
           </div>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item">
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" moveScrollLeftAnimate>
           <div fxFlex="19" class="feature-icon" style="background-color:#72b4b6; height: 72px">
           </div>
           <div fxFlex="4"></div>
           <div>
-            <h3 class="mt-0">FREE UPDATES</h3>
-            <p>No need to pay to get the updates. With Lambda all updates are free!</p>
+            <h3 class="mt-0" >FREE UPDATES</h3>
+            <p >No need to pay to get the updates. With Lambda all updates are free!</p>
           </div>
         </div>
       </div>
@@ -63,22 +63,22 @@
           moveScrollAnimate [offset]="400">
       </div>
       <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
-        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px">
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px" moveScrollRightAnimate>
           <div fxFlex="19" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
           </div>
           <div fxFlex="4"></div>
           <div>
             <h3 class="mt-0">RESPONSIVE DESIGN</h3>
-            <p>Made to look great on all devices. Tablets, mobiles and even desktops.</p>
+            <p >Made to look great on all devices. Tablets, mobiles and even desktops.</p>
           </div>
         </div>
-        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item">
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" moveScrollRightAnimate>
           <div fxFlex="19" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
           </div>
           <div fxFlex="4"></div>
           <div>
-            <h3 class="mt-0">ENERGY SAVER</h3>
-            <p>Designed to save energy and use less of your device’s CPU so you can use it more.</p>
+            <h3 class="mt-0" >ENERGY SAVER</h3>
+            <p >Designed to save energy and use less of your device’s CPU so you can use it more.</p>
           </div>
         </div>
       </div>
@@ -114,10 +114,8 @@
     </p>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <div [fxFlex]="100 / 6" class="position-relative" (click)="openImgViewer(image)"
-      *ngFor="let image of images; let first = first; let last = last"
-      [ngClass]="{'mr-2': first, 'ml-2': last, 'mx-2': !first && !last }">
-      <img class="w-100 h-100" [src]="image?.src">
+    <div [fxFlex]="100 / 6" class="position-relative" (click)="openImgViewer(image)" *ngFor="let image of images; let first = first; let last = last; let index = index" [ngClass]="{'mr-2': first, 'ml-2': last, 'mx-2': !first && !last }">
+      <img class="w-100 h-100" [src]="image?.src" fadeScrollAnimate [delay]="index * 100">
       <div class="img-overlay w-100 h-100">
         <div class="h-100 w-100 d-table">
           <div class="w-100 figure-caption">

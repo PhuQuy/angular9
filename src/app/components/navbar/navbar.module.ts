@@ -8,9 +8,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { BulletNavComponent } from './bullet-nav/bullet-nav.component';
 
 @NgModule({
-  declarations: [TopNavbarComponent, SideNavbarComponent],
+  declarations: [TopNavbarComponent, SideNavbarComponent, BulletNavComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -20,6 +21,6 @@ import { MatButtonModule } from '@angular/material/button';
     MatListModule,
     MatButtonModule
   ],
-  exports: [TopNavbarComponent, SideNavbarComponent]
+  exports: [TopNavbarComponent, SideNavbarComponent, BulletNavComponent]
 })
 export class NavbarModule { }
