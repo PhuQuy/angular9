@@ -29,7 +29,12 @@ const routes: Routes = [
         FlexLayoutModule,
         NavbarModule,
         MatSidenavModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes,
+            {
+                scrollPositionRestoration: 'enabled',
+                anchorScrolling: 'enabled',
+                scrollOffset: [0, 64] // [x, y]
+            })
     ],
     providers: [ShareService],
     bootstrap: [AppComponent]

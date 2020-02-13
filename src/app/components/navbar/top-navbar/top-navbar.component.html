@@ -1,27 +1,33 @@
 <div class="navbar" [class.bg-white-animate]="isTop">
-    <div class="bg-navbar" [class.fade-in]="isTop" [class.fade-out]="isTop == false"></div>
-    <div class="container " fxFlex="100%" fxFlex.gt-sm="80%" fxFlexOffset="0" fxFlexOffset.gt-sm="10" fxLayoutAlign="center" >
-      <mat-toolbar style="min-height:100px">
-        <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-sm>
-          <mat-icon>menu</mat-icon>
-        </button>
-        <a [routerLink]="['/']" mat-button [class.scale-down-center]="isTop" [class.scale-up-center]="isTop == false">
-          <h1 class="nav-brand">
-            <div fxLayout="row" fxLayoutAlign="space-around center">
-              <img src="/assets/images/logo.png" height="100px" style="margin-right: 10px;">
-              LAMBDA
-            </div>
-          </h1>
-        </a>
-        <div fxFlex fxLayout fxLayoutAlign="end">
-          <div fxHide.lt-md >
-            <a mat-button class="text-uppercase mx-2" (click)="onScroll('about')">About</a>
-            <a mat-button class="text-uppercase mx-2" (click)="onScroll('features')">Features</a>
-            <a mat-button class="text-uppercase mx-2" (click)="onScroll('design')">Design</a>
-            <a mat-button class="text-uppercase mx-2" (click)="onScroll('screenshots')">Screenshots</a>
-            <a mat-button class="text-uppercase mx-2" (click)="onScroll('testimonials')">Testimonials</a>
+  <div class="bg-navbar" [class.fade-in]="isTop" [class.fade-out]="isTop == false"></div>
+  <div class="container " fxFlex="100%" fxFlex.gt-sm="80%" fxFlexOffset="0" fxFlexOffset.gt-sm="10"
+    fxLayoutAlign="center">
+    <mat-toolbar style="min-height:100px">
+      <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <a [routerLink]="['/']" mat-button [class.scale-down-center]="isTop" [class.scale-up-center]="isTop == false">
+        <h1 class="nav-brand">
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            <img src="/assets/images/logo.png" height="100px" style="margin-right: 10px;">
+            LAMBDA
           </div>
+        </h1>
+      </a>
+      <div fxFlex fxLayout fxLayoutAlign="end">
+        <div fxHide.lt-md>
+          <a mat-button class="text-uppercase mx-2" (click)="onScroll('about')">About</a>
+          <a mat-button class="text-uppercase mx-2" (click)="onScroll('features')">Features</a>
+          <a mat-button class="text-uppercase mx-2" (click)="onScroll('design')">Design</a>
+          <a mat-button class="text-uppercase mx-2" (click)="onScroll('screenshots')">Screenshots</a>
+          <a mat-button class="text-uppercase mx-2" (click)="onScroll('testimonials')">Testimonials</a>
+          <a mat-stroked-button class="text-uppercase mx-2" class="custom-mat-stroked-button rounded" (click)="onScroll('get-it')">
+            <mat-icon fontSet="fas" fontIcon="fa-shopping-cart"></mat-icon>
+            Get It
+          </a>
+
         </div>
-      </mat-toolbar>
-    </div>
+      </div>
+    </mat-toolbar>
+  </div>
 </div>

@@ -1,7 +1,7 @@
-import { AfterViewInit, ElementRef, Input } from '@angular/core';
+import { AfterViewInit, ElementRef, Input, OnDestroy } from '@angular/core';
 import { ShareService } from 'app/share/share.service';
 
-export class AnimateDirective implements AfterViewInit {
+export class AnimateDirective implements AfterViewInit, OnDestroy {
     animationInClass = '';
     animationOutClass = '';
 
@@ -13,6 +13,7 @@ export class AnimateDirective implements AfterViewInit {
     @Input() offsetMobile = 0;
     offsetMobileLocal = 0;
     @Input() delay = 0;
+    scrollEvent$;
 
     constructor(protected element: ElementRef, protected shareService: ShareService, animationInClass, animationOutClass) {
         this.animationInClass = animationInClass;
@@ -21,7 +22,7 @@ export class AnimateDirective implements AfterViewInit {
 
     ngAfterViewInit() {
         this.screenHeight = window.screen.height * 0.6 + this.offset;
-        this.shareService.offsetTop.subscribe(() => {
+        this.scrollEvent$ = this.shareService.offsetTop.subscribe(() => {
             // this.element.nativeElement.innerHTML = this.element.nativeElement.getBoundingClientRect().top - this.screenHeight;
             if (this.delay) {
                 setTimeout(() => {
@@ -41,5 +42,10 @@ export class AnimateDirective implements AfterViewInit {
             this.element.nativeElement.classList.remove(this.animationInClass);
             this.element.nativeElement.classList.add(this.animationOutClass);
         }
+    }
+
+    ngOnDestroy() {
+        // tslint:disable-next-line: no-unused-expression
+        this.scrollEvent$ ? this.scrollEvent$.unsubscribe() : null;
     }
 }
