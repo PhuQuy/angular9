@@ -1,0 +1,19 @@
+.img-viewer {
+    // background-image: url("http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(48, 40, 64, .9);
+    color: white;
+    display: table-cell;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: zoom-out;
+}

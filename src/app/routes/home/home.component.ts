@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShareService } from 'app/share/share.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ImageViewerComponent } from '@components/image-viewer/image-viewer.component';
 
 @Component({
     selector: 'app-home',
@@ -9,8 +11,27 @@ import { ShareService } from 'app/share/share.service';
 export class HomeComponent implements OnInit {
 
     imageOverlay = false;
-
-    constructor(private shareService: ShareService) { }
+    images = [
+        {
+            src: 'http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-01.jpg'
+        },
+        {
+            src: 'http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-02.jpg'
+        },
+        {
+            src: 'http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-03.jpg'
+        },
+        {
+            src: 'http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-04.jpg'
+        },
+        {
+            src: 'http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-05.jpg'
+        },
+        {
+            src: 'http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-p-06.jpg'
+        },
+    ]
+    constructor(private shareService: ShareService, public dialog: MatDialog) { }
 
     ngOnInit(): void {
         window.addEventListener('scroll', this.scrollEvent, true);
@@ -20,4 +41,11 @@ export class HomeComponent implements OnInit {
         this.shareService.setOffsetTop(event.target.scrollTop);
     }
 
+
+    openImgViewer(image) {
+        const dialogRef = this.dialog.open(ImageViewerComponent, {
+            width: '250px',
+            data: image.src
+        });
+    }
 }
