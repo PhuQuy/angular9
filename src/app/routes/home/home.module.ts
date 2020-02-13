@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { DirectiveModule } from 'app/directives/directive.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 const routes: Routes = [
     {
@@ -24,7 +25,8 @@ const routes: Routes = [
         MatIconModule,
         MatButtonModule,
         DirectiveModule,
-        MatDialogModule
+        MatDialogModule,
+        CarouselModule
     ]
 })
 export class HomeModule {

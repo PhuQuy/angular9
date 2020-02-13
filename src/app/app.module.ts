@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
 import { NavbarModule } from '@components/navbar/navbar.module';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { Routes, RouterModule } from '@angular/router';
 import { MainLayoutComponent } from '@layouts/main-layout/main-layout.component';
+import { AppComponent } from './app.component';
 import { ShareService } from './share/share.service';
-import { DirectiveModule } from './directives/directive.module';
 
 const routes: Routes = [
     {
@@ -29,12 +28,7 @@ const routes: Routes = [
         FlexLayoutModule,
         NavbarModule,
         MatSidenavModule,
-        RouterModule.forRoot(routes,
-            {
-                scrollPositionRestoration: 'enabled',
-                anchorScrolling: 'enabled',
-                scrollOffset: [0, 64] // [x, y]
-            })
+        RouterModule.forRoot(routes),
     ],
     providers: [ShareService],
     bootstrap: [AppComponent]

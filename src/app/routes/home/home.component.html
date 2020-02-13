@@ -4,7 +4,8 @@
       <div class="text-white">
         <h1 fadeScrollAnimate class="light super">LAMBDA</h1>
         <h3 fadeScrollAnimate class="bigger light">The most powerful app ever <br> made. Buy it now!</h3>
-        <button mat-raised-button color="white" class="rounded" style="font-size: 20px;" fadeScrollAnimate [offset]="1000">
+        <button mat-raised-button color="white" class="rounded" style="font-size: 20px;" fadeScrollAnimate
+          [offset]="1000">
           Apple
           <mat-icon fontSet="fab" fontIcon="fa-apple"></mat-icon>
         </button>
@@ -38,12 +39,13 @@
     <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
       <div fxFlex="5"></div>
       <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
-        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px" moveScrollLeftAnimate>
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px"
+          moveScrollLeftAnimate>
           <div fxFlex="19" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
           </div>
           <div fxFlex="4"></div>
           <div>
-            <h3 class="mt-0" >SPEECH RECOGNITION</h3>
+            <h3 class="mt-0">SPEECH RECOGNITION</h3>
             <p>Want to interact with the app. No need for gestures! Speak and it will understand.</p>
           </div>
         </div>
@@ -53,22 +55,24 @@
           </div>
           <div fxFlex="4"></div>
           <div>
-            <h3 class="mt-0" >FREE UPDATES</h3>
-            <p >No need to pay to get the updates. With Lambda all updates are free!</p>
+            <h3 class="mt-0">FREE UPDATES</h3>
+            <p>No need to pay to get the updates. With Lambda all updates are free!</p>
           </div>
         </div>
       </div>
       <div>
-        <img src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-03.png" moveScrollAnimate [offset]="400">
+        <img src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-03.png"
+          moveScrollAnimate [offset]="400">
       </div>
       <div fxFlex="30" fxLayout="column" fxLayoutAlign="center">
-        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px" moveScrollRightAnimate>
+        <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" style="padding-bottom: 30px"
+          moveScrollRightAnimate>
           <div fxFlex="19" class="feature-icon" style="background-color:#72b4b6; width: 72px; height: 72px">
           </div>
           <div fxFlex="4"></div>
           <div>
             <h3 class="mt-0">RESPONSIVE DESIGN</h3>
-            <p >Made to look great on all devices. Tablets, mobiles and even desktops.</p>
+            <p>Made to look great on all devices. Tablets, mobiles and even desktops.</p>
           </div>
         </div>
         <div fxLayout="row" fxLayoutAlign="space-round" class="feature-item" moveScrollRightAnimate>
@@ -76,8 +80,8 @@
           </div>
           <div fxFlex="4"></div>
           <div>
-            <h3 class="mt-0" >ENERGY SAVER</h3>
-            <p >Designed to save energy and use less of your device’s CPU so you can use it more.</p>
+            <h3 class="mt-0">ENERGY SAVER</h3>
+            <p>Designed to save energy and use less of your device’s CPU so you can use it more.</p>
           </div>
         </div>
       </div>
@@ -107,13 +111,15 @@
   <div fxLayout="column" fxLayoutAlign="space-between center" style="padding: 60px 60px 40px 60px">
     <h2 class="section-title" fadeScrollAnimate>SCREENSHOTS</h2>
     <div class="divider"></div>
-    <p class="text-center lh-175" fadeScrollAnimate> 
+    <p class="text-center lh-175" fadeScrollAnimate>
       We worked hard to make a product that will stand out from the crowd.<br>
       Take a look at some of these cool features that makes Lambda so unique.
     </p>
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <div [fxFlex]="100 / 6" class="position-relative" (click)="openImgViewer(image)" *ngFor="let image of images; let first = first; let last = last; let index = index" [ngClass]="{'mr-2': first, 'ml-2': last, 'mx-2': !first && !last }">
+    <div [fxFlex]="100 / 6" class="position-relative" (click)="openImgViewer(image)"
+      *ngFor="let image of images; let first = first; let last = last; let index = index"
+      [ngClass]="{'mr-2': first, 'ml-2': last, 'mx-2': !first && !last }">
       <img class="w-100 h-100" [src]="image?.src" fadeScrollAnimate [delay]="index * 100">
       <div class="img-overlay w-100 h-100">
         <div class="h-100 w-100 d-table">
@@ -183,13 +189,15 @@
   <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" style="padding: 60px 60px 0px 60px">
     <div fxFlex="50" fxLayoutAlign="flex-end flex-end">
       <img style="height: 70vh;"
-        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png" moveScrollAnimate [offset]="500">
+        src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-06.png"
+        moveScrollAnimate [offset]="500">
     </div>
     <div fxFlex="50" fxLayoutAlign="center">
       <div fxLayout="column" fxLayoutAlign="center" style="height: 70vh;">
         <h1 fadeScrollAnimate>BEST APP, EVER</h1>
         <div class="divider"></div>
-        <p class="lh-175" fadeScrollAnimate>Lambda is the world’s most advanced theme. Built with incredible new capabilities and
+        <p class="lh-175" fadeScrollAnimate>Lambda is the world’s most advanced theme. Built with incredible new
+          capabilities and
           features designed to
           make the most out of your creativity. As with all of our products you’ll get <strong>100% solid
             support.</strong></p>
@@ -218,20 +226,32 @@
 <section id="testimonials" style="background-color: rgba(240,240,240,1); padding: 60px">
   <div fxLayout="column">
     <div fxLayoutAlign="center center">
-      <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
-        <blockquote fadeScrollAnimate>
-          I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to you how
-          powerful
-          beautiful and dynamic this theme is let alone the great customer service and you get a them that is a must.
-          Whether you have a theme you like or not, you must get this theme!
-        </blockquote>
-      </div>
+      <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let slide of [1,2,3]">
+          <ng-template carouselSlide>
+            <div fxFlex="60" fxFlex.fxShow.lt-sm="100" fxLayout="row" fxLayoutAlign="space-around center">
+              <div fxLayoutAlign="start">
+                <mat-icon fontSet="fas" fontIcon="fa-quote-left" style="font-size: 25px;color:#d0d0d0"></mat-icon>
+                <blockquote fadeScrollAnimate class="text-center">
+                  I've been a long time themeforest buyer and i have bought dozens of themes and i can't express to you
+                  how
+                  powerful beautiful and dynamic this theme is let alone the great customer service and you get a them
+                  that is a
+                  must.
+                  Whether you have a theme you like or not, you must get this theme!
+                </blockquote>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+
+      </owl-carousel-o>
     </div>
     <div fxFlex fxLayoutAlign="center center" fxLayout="column" fadeScrollAnimate>
       <img width="100" height="100" class="rounded-circle"
         src="http://d169hzb81ub7u3.cloudfront.net/landing/wp-content/uploads/sites/10/2014/11/app-t-02-150x150.jpg">
       <div>
-        Billy Thompson overplex.com
+        -- Billy Thompson overplex.com
       </div>
     </div>
   </div>

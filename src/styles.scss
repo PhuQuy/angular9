@@ -8,8 +8,9 @@ $angular9-theme: mat-light-theme($angular9-primary, $angular9-accent, $angular9-
 // @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 html,
 body {
