@@ -5,10 +5,16 @@ import { BehaviorSubject } from 'rxjs';
     providedIn: 'root'
 })
 export class ShareService {
+    constructor() { }
 
     offsetTop = new BehaviorSubject(null);
+    activeRouter = new BehaviorSubject(null);
+
     setOffsetTop(y) {
         this.offsetTop.next(y);
     }
-    constructor() { }
+
+    setActiveRouter(y) {
+        this.activeRouter.next(y);
+    }
 }

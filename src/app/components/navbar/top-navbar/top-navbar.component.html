@@ -16,12 +16,12 @@
       </a>
       <div fxFlex fxLayout fxLayoutAlign="end">
         <div fxHide.lt-md>
-          <a mat-button class="text-uppercase mx-2" (click)="onScroll('about')">About</a>
-          <a mat-button class="text-uppercase mx-2" (click)="onScroll('features')">Features</a>
-          <a mat-button class="text-uppercase mx-2" (click)="onScroll('design')">Design</a>
-          <a mat-button class="text-uppercase mx-2" (click)="onScroll('screenshots')">Screenshots</a>
-          <a mat-button class="text-uppercase mx-2" (click)="onScroll('testimonials')">Testimonials</a>
-          <a mat-stroked-button class="text-uppercase mx-2" class="custom-mat-stroked-button rounded" (click)="onScroll('get-it')">
+          <a [class.active]="activeRouter?.id == 'about'" mat-button class="text-uppercase mx-2" (click)="onScroll('about')">About</a>
+          <a [class.active]="activeRouter?.id == 'features'" mat-button class="text-uppercase mx-2" (click)="onScroll('features')">Features</a>
+          <a [class.active]="activeRouter?.id == 'design'" mat-button class="text-uppercase mx-2" (click)="onScroll('design')">Design</a>
+          <a [class.active]="activeRouter?.id == 'screenshots'" mat-button class="text-uppercase mx-2" (click)="onScroll('screenshots')">Screenshots</a>
+          <a [class.active]="activeRouter?.id == 'testimonials'" mat-button class="text-uppercase mx-2" (click)="onScroll('testimonials')">Testimonials</a>
+          <a [class.active]="activeRouter?.id == 'get-it'" mat-stroked-button class="text-uppercase mx-2" class="custom-mat-stroked-button rounded" (click)="onScroll('get-it')">
             <mat-icon fontSet="fas" fontIcon="fa-shopping-cart"></mat-icon>
             Get It
           </a>
