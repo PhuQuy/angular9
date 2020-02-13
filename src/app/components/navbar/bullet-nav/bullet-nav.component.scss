@@ -1,7 +1,17 @@
+@import "src/assets/scss/breakpoints.scss";
+
 .bullet-nav {
   position: fixed;
   right: 50px;
   z-index: 1000;
+
+  @include smobile() {
+    display: none;
+  }
+
+  @include xl() {
+    display: inherit;
+  }
 
   ul {
     transform: translateY(-50%);
