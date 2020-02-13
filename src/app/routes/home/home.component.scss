@@ -1,45 +1,108 @@
- .background-media {
-   background-image: url(http://lambda.oxygenna.com/landing/wp-content/uploads/sites/10/2014/11/app-01.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: no-scroll;
-   background-position: 50% 0%;
- }
+@import "src/assets/scss/breakpoints.scss";
 
- .feature-icon {
-   border-radius: 50%;
- }
+.background-media {
+  background-image: url(http://lambda.oxygenna.com/landing/wp-content/uploads/sites/10/2014/11/app-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: no-scroll;
+  background-position: 50% 0%;
+}
 
- .figure-caption {
-   display: table-cell;
-   vertical-align: middle;
-   text-align: center;
- }
+.about-container {
+  @include smobile() {
+    height: 180vh;
+  }
 
- .d-table {
-   display: table;
- }
+  @include xl() {
+    height: 140vh;
+  }
+}
 
- .skills-list {
-   list-style: none;
-   padding-left: 0 !important;
+.about-phone {
+  @include smobile() {
+    padding-top: 0;
+  }
 
-   i {
-     color: #72b4b6;
-     padding-right: 5px;
-   }
- }
+  @include xl() {
+    padding-top: 15vh;
+  }
 
- .rounded-circle {
-   border-radius: 50%;
- }
+  .phone-img {
+    @include smobile() {
+      height: 100vh;
+    }
 
- blockquote {
-     font-style: italic;
-     font-size: 26px;
-     line-height: 45px;
-     margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
- }
+    @include xl() {
+      height: 100%
+    }
+  }
+}
+
+.feature-icon {
+  border-radius: 50%;
+}
+
+.figure-caption {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.d-table {
+  display: table;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0 !important;
+
+  i {
+    color: #72b4b6;
+    padding-right: 5px;
+  }
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 26px;
+  line-height: 45px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.about-content {
+  @include smobile() {
+    text-align: center;
+    padding-top: 10vh;
+  }
+
+  @include xl() {
+    text-align: inherit;
+  }
+}
+
+.content-container {
+  @include smobile() {
+    padding: 40px;
+  }
+
+  @include xl() {
+    padding: 60px;
+  }
+}
+
+.design-image {
+  @include smobile() {
+    width: 50vh;
+  }
+
+  @include xl() {
+    width: 100%;
+  }
+}
